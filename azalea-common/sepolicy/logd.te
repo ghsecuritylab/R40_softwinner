@@ -1,0 +1,6 @@
+allow logd { fuse media_rw_data_file }:dir create_dir_perms;
+allow logd { fuse media_rw_data_file }:file create_file_perms;
+allow logd mnt_user_file:dir search;
+allow logd mnt_user_file:lnk_file read;
+allow logd storage_file:dir search;
+allow logd storage_file:lnk_file read;
